@@ -51,7 +51,7 @@ void main(void) {
         while (1) 
         {
             PIN_toggle(PIN_LED);
-            DLY_ms(50);
+            DLY_ms(1000);
         }
     }
 }
