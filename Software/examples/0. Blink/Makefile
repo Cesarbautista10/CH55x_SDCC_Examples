@@ -20,7 +20,10 @@ CODE_SIZE  = 0x3800
 CC         = sdcc
 OBJCOPY    = objcopy
 PACK_HEX   = packihx
-WCHISP    ?= python3 uploader/uploader.py
+# descoment this line when use windows
+WCHISP    ?= python uploader/main.py
+# descoment this line when use linux
+# WCHISP    ?= python3 uploader/main.py
 
 # Compiler Flags
 CFLAGS  = -mmcs51 --model-small --no-xinit-opt
@@ -57,7 +60,7 @@ $(TARGET).bin: $(TARGET).ihx
 	
 flash: $(TARGET).bin size removetemp
 	@echo "Uploading to CH55x ..."
-	@$(WCHISP) $(TARGET).bin
+	@$(WCHISP) $(TARGET).bin flash
 
 all: $(TARGET).bin $(TARGET).hex size
 
