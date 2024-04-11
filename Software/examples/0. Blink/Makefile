@@ -20,7 +20,7 @@ CODE_SIZE  = 0x3800
 CC         = sdcc
 OBJCOPY    = objcopy
 PACK_HEX   = packihx
-WCHISP    ?= python3 tools/chprog.py
+WCHISP    ?= python3 uploader/uploader.py
 
 # Compiler Flags
 CFLAGS  = -mmcs51 --model-small --no-xinit-opt
