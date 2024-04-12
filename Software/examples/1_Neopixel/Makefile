@@ -6,7 +6,7 @@
 # Type "make help" in the command line.
 # ===================================================================================
 # File Names
-SKETCH     = blink.c
+SKETCH     = 1_Neopixel.c
 TARGET     = $(basename $(SKETCH))
 INCLUDE    = src
 
