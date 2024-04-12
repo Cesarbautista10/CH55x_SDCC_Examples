@@ -9,7 +9,7 @@ For more detailed documentation, you can check [here](https://github.com/Cesarba
 
 ## Requirements
 
-- Proficiency in Python (Package Installation and Environments)
+- Python (Package Installation and Environments)
 - Utilization of Operating System Controllers
 - Understanding of Basic Electronics
 
